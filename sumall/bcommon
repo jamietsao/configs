@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+PREVIOUS_DIR=$PWD
+cd ../Common/
+play deps --sync --%test --verbose
+play build-module
+play eclipsify
+python ~/workspace/configs/sumall/updateEclipseCommon.py
+rm -rf .settings
+cd $PREVIOUS_DIR

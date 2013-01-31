@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+play deps --sync --forProd --%test --verbose
+play eclipsify

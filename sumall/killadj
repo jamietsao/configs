@@ -1,0 +1,1 @@
+ps -eaf | grep java | grep AdjunctServer | awk '{ print $2 }' | xargs kill -USR2

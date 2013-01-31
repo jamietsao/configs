@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+PREVIOUS_DIR=$PWD
+cd ../Common/
+play clean 
+play deps --sync $1 --verbose
+play build-module
+play eclipsify
+python ~/workspace/configs/sumall/updateEclipseCommon.py
+rm -rf .settings
+cd $PREVIOUS_DIR
+sudo play clean
+play deps --sync $1 --verbose
+play eclipsify
+python ~/workspace/configs/sumall/updateEclipse.py
+rm -rf .settings
+rm -rf modules/guice-1.2/test/
