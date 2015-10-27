@@ -15,3 +15,5 @@ parse_git_branch() {
 }
 PS1="\w \$(parse_git_branch) $ "
 
+# aliases
+alias utc='TZ="UTC" date'
