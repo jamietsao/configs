@@ -1,0 +1,23 @@
+"*":
+  core:
+    disabledPackages: [
+      "go-debug"
+    ]
+    telemetryConsent: "no"
+  "exception-reporting":
+    userId: "f4949d7e-636d-b22a-2566-26d8cb1a6bdb"
+  "go-plus":
+    disabledBundledPackages: [
+      "go-debug"
+      "go-signature-statusbar"
+      "linter"
+      "hyperclick"
+    ]
+    test:
+      runTestsOnSave: false
+      runTestsWithShortFlag: false
+  "project-plus":
+    autoDiscover: false
+    newWindow: true
+  welcome:
+    showOnStartup: false
