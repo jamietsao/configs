@@ -38,7 +38,7 @@ alias gr='git rebase master'
 alias gri='git rebase -i master'
 alias gc='git checkout'
 alias gcb='git checkout -b'
-source /Users/jamie/workspace/gametime/bin/gt_aliases
+be() { bundle exec "$*" }
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
