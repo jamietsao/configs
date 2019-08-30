@@ -82,3 +82,13 @@ source $ZSH/oh-my-zsh.sh
 #
 
 source ~/workspace/configs/zsh/env.sh
+
+# added by travis gem
+[ -f /Users/jamie/.travis/travis.sh ] && source /Users/jamie/.travis/travis.sh
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/jamie/.nvm/versions/node/v5.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/jamie/.nvm/versions/node/v5.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/jamie/.nvm/versions/node/v5.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/jamie/.nvm/versions/node/v5.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh

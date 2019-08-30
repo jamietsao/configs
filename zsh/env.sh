@@ -17,7 +17,7 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
 # java
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # ruby
 export BUNDLER_EDITOR=subl
@@ -31,6 +31,9 @@ export PATH=$PATH:~/workspace/gametime/bin
 
 # Useful scripts
 export PATH=$PATH:~/workspace/scripts/git
+
+# installed software
+export PATH=$PATH:~/workspace/bin:/Users/jamie/workspace/bin/protoc-3.5.1-osx-x86_64/bin
 
 # http://stackoverflow.com/questions/9502274/last-command-in-same-terminal
 unsetopt share_history
