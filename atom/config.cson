@@ -1,4 +1,8 @@
 "*":
+  "atom-beautify":
+    json:
+      beautify_on_save: true
+      disabled: true
   core:
     disabledPackages: [
       "go-debug"
@@ -6,6 +10,7 @@
     telemetryConsent: "no"
   editor:
     showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "f4949d7e-636d-b22a-2566-26d8cb1a6bdb"
   "go-plus":
@@ -15,6 +20,8 @@
       "linter"
       "hyperclick"
     ]
+    panel:
+      currentHeight: "17.323651452282157vh"
     test:
       runTestsOnSave: false
       runTestsWithShortFlag: false
