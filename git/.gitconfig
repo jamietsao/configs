@@ -1,13 +1,35 @@
+# credit to https://gist.github.com/scottnonnenberg/fefa3f65fdb3715d25882f3023b31c29 for a lot of these configs
+
 [color]
 	ui = true
+
 [user]
 	name = Jamie Tsao
-	email = jamie@sumall.com
+	email = jamie@gametime.co
+
+[alias]
+	stash-all = stash save --include-untracked
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+[merge]
+ 	ff = only
+
+[fetch]
+	prune = true
+
+[push]
+	default = simple
+
+[status]
+	showUntrackedFiles = all
+
 [core]
 	excludesfile = /Users/jamie/.gitignore_global
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
