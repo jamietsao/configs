@@ -54,6 +54,3 @@ be() { bundle exec "$*" }
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# awscli
-source /usr/local/share/zsh/site-functions/_aws
