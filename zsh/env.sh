@@ -1,6 +1,8 @@
 #
 # jamietsao customizations
 #
+# source this at bottom of .zshrc file. e.g.:
+# source ~/workspace/configs/zsh/env.sh
 
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
